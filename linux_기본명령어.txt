@@ -1,0 +1,18 @@
+이미지 파일 열기 : eog 파일이름
+
+파일 복사 : cp {옵션} {복사할경로} {붙여넣을경로}
+                > cp -r /home/ai_competition/1.competition_trainset/ ./
+                > cp -r /home/ai_competition/2.testset/ ./
+                > cp -r /home/ai_competition/3.backsub_images_100/ ./
+
+파일 삭제 : 단일파일 : rm {파일명}
+              하위디렉토리까지 삭제 : rm -rf {폴더명}
+
+주피터 노트북 사용 : conda activate env_ywj
+                          jupyter notebook --ip=0.0.0.0 --no-browser
+                         147.46.121.38:8888로 접속
+                         패스워드 1234
+
+GPU 사용 : cm.gpu q=cm_s_vgpu
+
+서버 -> 로컬 : scp -rf junseo@147.46.121.38:/home/junseo/* ./path/to/save
