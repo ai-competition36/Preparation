@@ -35,6 +35,16 @@ cp {옵션} {복사할경로} {붙여넣을경로}
 ---
 
 # 2. 소스 코드 관리를 위한 GIT 사용법
+## 초기 설정
+```
+git config --global user.name {이름}
+git config --global user.email {이메일}
+git init
+touch .gitignore
+git add .
+git commit -m "first commit"
+# first commit까지 해야 초기 설정 완료
+```
 ## init
 로컬 디렉토리를 git저장소로 만든다. .git파일 생성
 ```
@@ -46,6 +56,7 @@ git init
 git add {파일이름}
 # 또는
 git add --all
+git add .
 ```
 ## commit
 stage에 있는 변경사항을 커밋한다.
@@ -94,6 +105,16 @@ git merge develop
 ```
 ### merge시 발생하는 이슈에 대한 해결방법
 https://backlog.com/git-tutorial/kr/stepup/stepup2_7.html
+## commit 간 이동(버전 관리)
+```
+git log
+# 커밋 히스토리를 조회할 수 있다.
+git reset {commit hash값}
+git reset HEAD~1 # 하나 뒤에 있는 commit으로 돌아간다
+git reset --hard #  사이에 있는 commit들을 모두 지우고 뒤로 돌아간다
+git reset --soft #  사이에 있는 commit들이 모두 합쳐진 채로 staged 영역에 남는다
+git reset --mixed # (default) 사이에 있는 commit들이 모두 합쳐진 채로 unstaged 영역에 남는다
+```
 
 ---
 
