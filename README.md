@@ -30,7 +30,7 @@ cp {옵션} {복사할경로} {붙여넣을경로}
 > cm.gpu q=cm_s_vgpu
 
 ## 서버 -> 로컬 
-> scp -rf ai_competition36@147.46.121.38:/home/ai_competition36/* ./path/to/save
+> scp -r ai_competition36@147.46.121.38:/home/ai_competition36/ ./path/to/save
 
 ---
 
