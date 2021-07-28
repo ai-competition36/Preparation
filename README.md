@@ -2,7 +2,8 @@
 목차
 1. 리눅스 기본 명령어
 2. 소스 코드 관리를 위한 GIT 사용법
-3. 기타
+3. 이미지 라벨링
+4. 기타
 
 ---
 
@@ -68,7 +69,7 @@ git log
 ## push
 origin은 원격저장소를 나타낸다.
 ```
-git add origin {원격저장소이름} https://github.com/유저네임/레파지토리네임.git
+git remote add origin https://github.com/유저네임/레파지토리네임.git
 git push origin master
 ```
 ## fetch
@@ -115,6 +116,14 @@ git reset --hard #  사이에 있는 commit들을 모두 지우고 뒤로 돌아
 git reset --soft #  사이에 있는 commit들이 모두 합쳐진 채로 staged 영역에 남는다
 git reset --mixed # (default) 사이에 있는 commit들이 모두 합쳐진 채로 unstaged 영역에 남는다
 ```
+
+---
+
+# 이미지 라벨링
+## 이미지 라벨링 툴
+https://github.com/tzutalin/labelImg
+
+설명 : https://wingnim.tistory.com/58
 
 ---
 
